@@ -1,4 +1,4 @@
-#inlcude <stdio.h>
+#include <stdio.h>
 /**
  * main - entry point
  * code for combinatorial stuff
@@ -10,10 +10,13 @@ int main(void)
 
 	n = 0;
 	while (n < 58)
+	{
 		putchar(n);
-		if (n != 9)
+		if (n != 57)
 			putchar(',');
 			putchar(' ');
+		n++;
+	}
 	putchar("\n");
 	return (0);
 }
