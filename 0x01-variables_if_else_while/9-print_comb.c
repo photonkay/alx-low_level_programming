@@ -8,8 +8,7 @@ int main(void)
 {
 	int n;
 
-	n = 0;
-	while (n < 58)
+	for (n = 48; n < 58; n++)
 	{
 		putchar(n);
 		if (n != 57)
@@ -17,7 +16,6 @@ int main(void)
 			putchar(',');
 			putchar(' ');
 		}
-		n++;
 	}
 	putchar('\n');
 	return (0);
