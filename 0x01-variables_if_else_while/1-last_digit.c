@@ -8,6 +8,7 @@
  * main - Entry point
  *
  * code to print last digits
+ * 
  * Return: Always 0(Success)
  */
 int main(void)
