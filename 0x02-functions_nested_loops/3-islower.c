@@ -6,7 +6,7 @@
  * Return 1 if c is lowercase
  * Return 0 otherwise
  */
-int islower(int c)
+int _islower(int c)
 {
 	if (c > 96 && c < 122)
 		return (1);
