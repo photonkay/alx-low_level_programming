@@ -2,9 +2,9 @@
 #include "main.h"
 
 /**
- * main - entry point
- * print alphabet in lowercase
- * Return: 0 as success
+ * print_alphabet - prints out lower case alphabets
+ *
+ * Return: 0 on success
  */
 void print_alphabet(void)
 {
