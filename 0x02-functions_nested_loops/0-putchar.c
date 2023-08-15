@@ -9,6 +9,6 @@ int main(void)
 {
 	char str[] = "_putchar\n";
 
-	write(1, str, size0f(str)-1);
+	write(1, str, sizeof(str)-1);
 	return (0);
 }
