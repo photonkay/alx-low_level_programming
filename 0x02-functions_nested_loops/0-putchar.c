@@ -8,6 +8,7 @@
 int main(void)
 {
 	char str[] = "_putchar\n";
-	write(1, str, 50);
+
+	write(1, str, size0f(str)-1);
 	return (0);
 }
