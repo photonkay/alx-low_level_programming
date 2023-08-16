@@ -2,5 +2,5 @@
 #define main_h
 
 int _putchar(char c); 
-void _abs(int i);
+int _abs(int i);
 #endif
