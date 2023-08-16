@@ -8,18 +8,18 @@
  */
 int print_last_digit(int i)
 {
-	int d; /*d is the remainder*/
+	char d; /*d is the remainder*/
 
 	if (i > 0)
 	{
 		i = (-1) * i;
 		d = i % 10;
-		return (d);
+		_putchar(d);
 	}
 	else
 	{
 		d = i % 10;
-		return (d);
+		_putchar(d);
 	}
 	return (d);
 }
