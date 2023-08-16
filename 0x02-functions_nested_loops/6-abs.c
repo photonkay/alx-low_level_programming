@@ -6,11 +6,11 @@
  * @i is the integer passed
  * Return: Always 0 on success
  */
-int _abs(int i) /*@i is the integer passed*/
+void _abs(int i) /*@i is the integer passed*/
 {
 	if (i < 0)
 	{
 		i = (-1) * i;
 	}
-	return (printf("%d", i));
+	printf("%d", i);
 }
