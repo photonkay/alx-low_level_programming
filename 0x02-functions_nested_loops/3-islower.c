@@ -7,7 +7,8 @@
  * Return: Always 1 if c is lowercase
  * otherwise, 0 is returned
  */
-int _islower(int c) /*Checks lowercase c is the character to be tested*/
+/*Checks if a character is lowercase letter*/
+int _islower(int c) /*c is the character to be tested*/
 {
 	if (c > 96 && c < 122)
 		return (1);
