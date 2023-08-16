@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include "main.h"
 
-/*
- * _islower(int c) checks if an alphavet is lower
+/**
+ * _islower(int c) checks if an alphabet is lower
  * Return 1 if c is lowercase
  * Return 0 otherwise
  */
