@@ -8,7 +8,7 @@
  */
 int print_last_digit(int i)
 {
-	int d; /*d is the remainder*/
+	char d; /*d is the remainder*/
 
 	if (i < 0)
 	{
