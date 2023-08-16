@@ -11,5 +11,6 @@ int print_last_digit(int i)
 	int r; /*r is the remainder*/
 
 	r = i % 10;
+	write(1, r, 1);
 	return (r);
 }
