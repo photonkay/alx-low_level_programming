@@ -2,5 +2,5 @@
 #define main_h
 
 int _putchar(char);
-int _isalpha(int c);
+int _islower(int c);
 #endif
