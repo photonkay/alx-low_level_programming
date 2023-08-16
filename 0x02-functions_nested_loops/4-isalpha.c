@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * _isalpha(int c) checks if char is an alphabet
+ * _isalpha - tests if char is an alphabet
  * Return: 1 on success
  * on error, 0 is returned
  */
-int _isalpha(int c)
+int _isalpha(int c) /*@c: number to pass*/
 {
 	if (c > 64 && c <= 90)
 		return (1);
