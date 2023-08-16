@@ -5,7 +5,7 @@
  * Return: 1 on success
  * on error, 0 is returned
  */
-int _isalpha(int c) /*@c: number to pass*/
+int _isalpha(int c) /*@c: number to pass to _isalpha*/
 {
 	if (c > 64 && c <= 90)
 		return (1);
