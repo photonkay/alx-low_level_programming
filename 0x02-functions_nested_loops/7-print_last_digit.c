@@ -10,7 +10,16 @@ int print_last_digit(int i)
 {
 	int d; /*d is the remainder*/
 
-	d = i % 10;
-	_putchar(d);
+	if (i > 0)
+	{
+		i = (-1) * i;
+		d = i % 10;
+		return (d);
+	}
+	else
+	{
+		d = i % 10;
+		return (d);
+	}
 	return (d);
 }
