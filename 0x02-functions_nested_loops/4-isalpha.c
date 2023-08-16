@@ -2,6 +2,7 @@
 #include "main.h"
 /**
  * _isalpha - tests if char is an alphabet
+ *@c: character to pass to _isalpha
  * Return: 1 on success
  * on error, 0 is returned
  */
