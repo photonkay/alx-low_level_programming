@@ -12,5 +12,5 @@ int _abs(int i) /*@i is the integer passed*/
 	{
 		i = (-1) * i;
 	}
-	return (printf(i));
+	return (printf("%d", i));
 }
