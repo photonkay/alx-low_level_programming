@@ -2,5 +2,5 @@
 #define main_h
 
 int _putchar(char);
-int _islower(int c);
+int print_sign(int n);
 #endif
