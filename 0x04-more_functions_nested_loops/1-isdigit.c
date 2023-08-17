@@ -7,7 +7,7 @@
  * Return: 1 if digit
  * Return: 0 otherwise
  */
-int _isdigit(int c)
+int _isdigit(int c) /*@c: char to test*/
 {
 	if (c >= '0' && c <= '9')
 	{
