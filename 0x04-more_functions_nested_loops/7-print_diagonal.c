@@ -2,12 +2,12 @@
 #include "main.h"
 
 /**
- * print_diagonal - prints diagonal n times
- * @n: number of times \ is printed
+ * print_diagonal - printing diagonals
+ * @n: number of times
+ *
  * Return: void
  */
 void print_diagonal(int n) /*@n: number of times*/
-{
 	int i,j;
 
 	if (n <= 0)
@@ -18,13 +18,12 @@ void print_diagonal(int n) /*@n: number of times*/
 	{
 		for (i = 0; i < n; i++)
 		{
-			_putchar('\\');
-			_putchar('\n');
-			_putchar(' ');
 			for (j = 0; j < i; j++)
 			{
 				_putchar(' ');
 			}
+			_putchar('\\');
+			_putchar('\n');
 		}
 	}
 }
