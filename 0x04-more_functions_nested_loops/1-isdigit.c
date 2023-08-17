@@ -5,12 +5,9 @@
  * _isdigit - checks for a digit (0 through 9)
  * @c: is the chracter passed
  * Return: 1 if digit
- * Return: 0 otherwise
  */
 int _isdigit(int c) /*@c: char to test*/
 {
-	char c;
-
 	if (c >= '0' && c <= '9')
 	{
 		return (1);
