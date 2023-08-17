@@ -8,6 +8,7 @@
  * Return: void
  */
 void print_diagonal(int n) /*@n: number of times*/
+{
 	int i,j;
 
 	if (n <= 0)
