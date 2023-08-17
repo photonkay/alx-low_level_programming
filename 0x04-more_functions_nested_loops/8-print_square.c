@@ -2,12 +2,11 @@
 #include "main.h"
 
 /**
- * print_diagonal - printing diagonals
- * @n: number of times
- *
+ * print_square - prints # as square
+ * @size: is the size of the square
  * Return: void
  */
-void print_diagonal(int n) /*@n: number of times*/
+void print_square(int size)
 {
 	int i, j;
 
@@ -19,11 +18,11 @@ void print_diagonal(int n) /*@n: number of times*/
 	{
 		for (i = 0; i < n; i++)
 		{
-			for (j = 0; j < i; j++)
+			_putchar('#');
+			for (j = 0; j < n - 1; j++)
 			{
-				_putchar(' ');
+				_putchar('#');
 			}
-			_putchar('\\');
 			_putchar('\n');
 		}
 	}
