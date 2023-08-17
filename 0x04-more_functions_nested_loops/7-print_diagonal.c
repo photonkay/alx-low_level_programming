@@ -2,11 +2,11 @@
 #include "main.h"
 
 /**
- * print_diagonal - prints diagonal on screen n times
+ * print_diagonal - prints diagonal n times
  * @n: number of times \ is printed
  * Return: void
  */
-void print_diagonal(int n)
+void print_diagonal(int n) /*@n: number of times*/
 {
 	int i,j;
 
