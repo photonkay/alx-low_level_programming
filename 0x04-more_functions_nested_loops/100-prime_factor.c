@@ -1,17 +1,14 @@
 #include <stdio.h>
-#include <unistd.h>
-#include "main.h"
 
 /**
- * main - entry point
+ * largest_prime - prints out the largest prime number
  *
- * Description: Program prints out largest prine factor
+ *@num: is the number to be passed
  *
  * Return: Always 0 on success
  */
-int main(void)
+void largest_prime(long long int num)
 {
-	unsigned long long int num = 612852475143;
 	unsigned long long int largestPrimeFactor = 2;
 
 	while (num > largestPrimeFactor)
@@ -27,5 +24,16 @@ int main(void)
 	}
 
 	printf("%llu\n", largestPrimeFactor);
+}
+
+/**
+ * main - entry point
+ *
+ * Return: Always 0 on success
+ */
+int main(void)
+{
+	largest_prime(612852475143);
+
 	return (0);
 }
