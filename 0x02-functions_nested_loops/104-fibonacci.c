@@ -7,19 +7,19 @@
 */
 int main(void)
 {
-	int i;
-	unsigned long int a = 1, b = 2, c = 0;
+	unsigned int term1 = 1;
+	unsigned int term2 = 2;
 
-	printf("1, 2, ");
-	for (i = 3; i < 99; i++)
+	printf("%u, %u", term1, term2);
+
+	for (int i = 3; i <= 98; ++i)
 	{
-		c = a + b;
-		if (i < 98)
-			printf("%lu, ", c);
-		else
-			printf("%lu\n", c);
-		a = b;
-		b = c;
+		unsigned int nextTerm = term1 + term2;
+		printf(", %u", nextTerm);
+		term1 = term2;
+		term2 = nextTerm;
 	}
-	return (0);
+
+	printf("\n");
+	return 0;
 }
