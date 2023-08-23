@@ -11,10 +11,10 @@ int main(void)
 	unsigned long int a = 1, b = 2, c = 0;
 
 	printf("1, 2, ");
-	for (i = 0; i < 90; i++)
+	for (i = 0; i < 99; i++)
 	{
 		c = a + b;
-		if (i < 89)
+		if (i < 98)
 			printf("%lu, ", c);
 		else
 			printf("%lu\n", c);
