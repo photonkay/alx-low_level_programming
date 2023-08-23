@@ -8,23 +8,19 @@
 */
 int main(void)
 {
-	long int i;
+	unsigned long int i, sum;
 	unsigned long int a = 1, b = 2, c = 0;
 
-	printf("1, 2, ");
 	for (i = 0; i < (4000000 - 2); i++)
     {
 		c = a + b;
 
 		if (c % 2 == 0)
-			printf("%lu", c);
+			sum += c;
 
-		if (i == (4000000 - 2))
-			printf("\n");
-		else
-            printf(", ");
 		a = b;
 		b = c;
 	}
+	printf("%lu\n", sum);
 	return (0);
 }
