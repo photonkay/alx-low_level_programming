@@ -15,7 +15,7 @@ int main(void)
 
 	for (i = 3; i <= 98; ++i)
 	{
-		unsigned int nextTerm = term1 + term2;
+		unsigned long int nextTerm = term1 + term2;
 		printf(", %lu", nextTerm);
 		term1 = term2;
 		term2 = nextTerm;
