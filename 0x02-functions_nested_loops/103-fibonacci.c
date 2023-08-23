@@ -9,7 +9,7 @@
 int main(void)
 {
 	unsigned long int i, sum;
-	unsigned long int a = 1, b = 2, c = 0;
+	unsigned long int a = 0, b = 1, c = 0;
 
 	for (i = 1; c < 4000000; i++)
 	{
