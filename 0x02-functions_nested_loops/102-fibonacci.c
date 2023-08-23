@@ -17,7 +17,7 @@ int main(void)
 		if (i < 47)
 			printf("%lu, ", c);
 		else
-			printf("%lu", c);
+			printf("%lu\n", c);
 		a = b;
 		b = c;
 	}
