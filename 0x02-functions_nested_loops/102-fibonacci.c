@@ -7,8 +7,8 @@
 */
 int main(void)
 {
-	int i, a = 1, b = 2;
-	unsigned long int c = 0;
+	int i;
+	unsigned long int a = 1, b = 2, c = 0;
 
 	printf("1, 2, ");
 	for (i = 0; i < 48; i++)
