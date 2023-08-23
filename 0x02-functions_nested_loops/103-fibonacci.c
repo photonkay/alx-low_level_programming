@@ -2,17 +2,17 @@
 
 /**
 *main - entry point
-*Description: program outputs Fibonacci numbers starting from 1 and 2
-*		this time only evens get through
+*Description: program outputs sum of Fibonacci numbers starting from 1 and 2
+*		only evens are summed
 *Return: always 0 on success
 */
 int main(void)
 {
-	unsigned long int i, sum;
-	unsigned long int a = 1, b = 2, c = 0;
+	int i, sum;
+	int a = 1, b = 2, c = 0;
 
-	for (i = 0; i < (4000000 - 2); i++)
-    {
+	for (i = 1; c < 4000000; i++)
+	{
 		c = a + b;
 
 		if (c % 2 == 0)
@@ -21,6 +21,6 @@ int main(void)
 		a = b;
 		b = c;
 	}
-	printf("%lu\n", sum);
+	printf("%d\n", sum);
 	return (0);
 }
