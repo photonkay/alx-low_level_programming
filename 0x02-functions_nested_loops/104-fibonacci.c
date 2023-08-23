@@ -11,7 +11,7 @@ int main(void)
 	unsigned long int a = 1, b = 2, c = 0;
 
 	printf("1, 2, ");
-	for (i = 0; i < 99; i++)
+	for (i = 3; i < 99; i++)
 	{
 		c = a + b;
 		if (i < 98)
