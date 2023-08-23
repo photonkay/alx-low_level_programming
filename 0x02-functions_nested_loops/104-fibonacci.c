@@ -7,12 +7,13 @@
 */
 int main(void)
 {
+	int i;
 	unsigned int term1 = 1;
 	unsigned int term2 = 2;
 
 	printf("%u, %u", term1, term2);
 
-	for (int i = 3; i <= 98; ++i)
+	for (i = 3; i <= 98; ++i)
 	{
 		unsigned int nextTerm = term1 + term2;
 		printf(", %u", nextTerm);
