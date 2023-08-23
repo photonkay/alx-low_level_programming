@@ -8,7 +8,7 @@
 int main(void)
 {
 	int i, a = 1, b = 2;
-	long int c = 0;
+	long long unsigned int c = 0;
 
 	printf("1, 2, ");
 	for (i = 0; i < 48; i++)
