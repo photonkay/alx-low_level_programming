@@ -8,8 +8,8 @@
 */
 int main(void)
 {
-	int i, sum;
-	int a = 1, b = 2, c = 0;
+	unsigned long int i, sum;
+	unsigned long int a = 1, b = 2, c = 0;
 
 	for (i = 1; c < 4000000; i++)
 	{
@@ -21,6 +21,6 @@ int main(void)
 		a = b;
 		b = c;
 	}
-	printf("%d\n", sum);
+	printf("%lu\n", sum);
 	return (0);
 }
