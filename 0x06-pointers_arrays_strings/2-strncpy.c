@@ -9,7 +9,6 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i = 0;
 	char *s = dest;
 
 	while (n > 0 && *src != '\0')
