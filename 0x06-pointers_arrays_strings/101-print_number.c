@@ -3,20 +3,21 @@
 /**
   * print_number - Prints any integer with putchar
   * @n: Number to prints
-  *
   * Return: void
   */
 void print_number(int n)
 {
-	int x;
+	unsigned int x;
 
 	if (n < 0)
 	{
 		_putchar('-');
-		n *= -1;
+		n = -n;
 	}
 	else
+	{
 		x = n;
+	}
 
 	if (x / 10)
 		print_number(x / 10);
