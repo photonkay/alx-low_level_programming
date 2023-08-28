@@ -6,9 +6,9 @@
  * @b: constant byte
  * @n: number of bytes 
  */
-char *_memeset(char *s, char b, unsigned int n)
+char *_memset(char *s, char b, unsigned int n)
 {
-	char *p = *s;
+	char *p = s;
 	unsigned int i;
 
 	for (i = 0; i < n; i++)
