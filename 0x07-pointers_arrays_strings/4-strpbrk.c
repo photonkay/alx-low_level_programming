@@ -6,15 +6,15 @@
  * @accept: string to find
  * Return: pointer to the byte that matches one of the bytes in accept
  */
-char *_strpbrk(char *s, char accept)
+char *_strpbrk(char *s, char *accept)
 {
 	unsigned int i, j;
 
 	for (i = 0; *(s + i) != '\0'; i++)
 	{
-		for (j = 0; *(accept + i) = '\0'; j++)
+		for (j = 0; *(accept + i) != '\0'; j++)
 		{
-			if (*(s + i) == *(accept + i))
+			if (*(s + i) == *(accept + j))
 			{
 				return (s + i);
 			}
