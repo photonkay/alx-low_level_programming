@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
-*print_chessboard- prints a chess looking board
-*@a: is the array
-*Return: void
-*/
+ * print_chessboard - prints a chess looking board
+ * @a: is the array
+ * Return: void
+ */
 void print_chessboard(char (*a)[8])
 {
 	int i, j;
