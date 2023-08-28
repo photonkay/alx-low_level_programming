@@ -15,6 +15,7 @@ void print_chessboard(char (*a)[8])
 		{
 			putchar(a[i][j]);
 		}
-		putchar('\n');
+		if ( i != 7)
+			putchar('\n');
 	}
 }
