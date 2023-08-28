@@ -6,7 +6,7 @@
  * @needle: fine me
  * Return: pointer 
  */
-char *strstr(char *haystack, char *needle)
+char *_strstr(char *haystack, char *needle)
 {
 	char *bhaystack;
 	char *pneedle;
@@ -23,7 +23,7 @@ char *strstr(char *haystack, char *needle)
 		}
 		if (!*pneedle)
 			return (bhaystack);
-		haystack = bhyastack + 1;
+		haystack = bhaystack + 1;
 	}
 	return (0);
 }
