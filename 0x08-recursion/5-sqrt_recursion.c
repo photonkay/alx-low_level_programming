@@ -18,6 +18,7 @@ int _sqrt_recursion(int n)
 /**
  * the_sqrt - this is the main guy
  * @n: the number
+ * @i: is the iterator
  * Return: int n or -1 to indicate error
  */
 int the_sqrt(int n, int i)
@@ -27,4 +28,4 @@ int the_sqrt(int n, int i)
 	if (i * i == n)
 		return (i);
 	return (the_sqrt(n, i + 1));
-}	
+}
