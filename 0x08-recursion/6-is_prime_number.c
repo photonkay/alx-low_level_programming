@@ -16,7 +16,7 @@ int is_prime_number(int n)
 }
 
 /**
- * is_divisible - checks if a number is divisible by number > 1 
+ * is_divisible - checks if a number is divisible by number > 1
  * @n: number to test
  * @i: divisor
  * Return: 1 if divisible by a number, otherwise 0 is returned
