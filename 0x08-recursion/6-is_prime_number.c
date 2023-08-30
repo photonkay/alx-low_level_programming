@@ -4,20 +4,19 @@
 int is_divisible(int n, int i);
 
 /**
- * _is_prime_number - checks if a number is prime
+ * is_prime_number - checks if a number is prime
  * @n: number to be tested
  * Return: 1 if prime otherwise 0 is returned
  */
 int is_prime_number(int n)
 {
-	if ( n <= 1)
+	if (n <= 1)
 		return (0);
 	return (!is_divisible(n, n - 1));
 }
 
 /**
- * is_divisible - checks if a number is divisible by a number,
- * 					besides 1. 
+ * is_divisible - checks if a number is divisible by number > 1 
  * @n: number to test
  * @i: divisor
  * Return: 1 if divisible by a number, otherwise 0 is returned
