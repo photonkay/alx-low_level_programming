@@ -2,7 +2,6 @@
 
 /**
  * main - entry point
- * Description - print name of program
  * Return: always 0 success
  */
 int main(int argc, char *argv[])
