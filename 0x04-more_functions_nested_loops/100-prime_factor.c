@@ -1,37 +1,20 @@
 #include <stdio.h>
-
+#include "main.h"
 /**
- * largest_prime - prints out the largest prime number
- *@num: is the number to be passed
- * Return: Always 0 on success
- */
-void largest_prime(long int num)
-{
-	unsigned long int largestPrimeFactor = 2;
+ * main - prints the largest prime factor of 612852475143
+ * Bwave ICT / Bright Daniel
+ * Return: always 0
+ **/
 
-	while (num > largestPrimeFactor)
-	{
-		if (num % largestPrimeFactor == 0)
-		{
-			num = num / largestPrimeFactor;
-		}
-		else
-		{
-			largestPrimeFactor++;
-		}
-	}
-
-	printf("%llu\n", largestPrimeFactor);
-}
-
-/**
- * main - entry point
- *
- * Return: Always 0 on success
- */
 int main(void)
 {
-	largest_prime(612852475143);
+	unsigned long int i, n = 612852475143;
 
+	for (i = 3; i < 782849; i = i + 2)
+	{
+		while ((n % i == 0) && (n != i))
+			n = n / i;
+	}
+	printf("%lu\n", n);
 	return (0);
 }
