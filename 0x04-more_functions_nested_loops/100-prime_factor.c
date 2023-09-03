@@ -2,14 +2,12 @@
 
 /**
  * largest_prime - prints out the largest prime number
- *
  *@num: is the number to be passed
- *
  * Return: Always 0 on success
  */
-void largest_prime(long long int num)
+void largest_prime(long int num)
 {
-	unsigned long long int largestPrimeFactor = 2;
+	unsigned long int largestPrimeFactor = 2;
 
 	while (num > largestPrimeFactor)
 	{
