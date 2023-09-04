@@ -9,7 +9,6 @@
  */
 char *_strdup(char *str)
 {
-	unsigned int i = 0;
 	char *dup;
 
 	dup = malloc(strlen(str) + 1);
