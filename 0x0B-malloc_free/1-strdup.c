@@ -12,7 +12,7 @@ char *_strdup(char *str)
 	unsigned int i = 0;
 	char *dup;
 
-	while (*str != '\0)
+	while (*str != '\0')
 		++len;
 
 	dup = malloc(len + 1);
