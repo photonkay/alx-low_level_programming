@@ -1,3 +1,4 @@
+#include <string.h>
 #include <stdlib.h>
 #include "main.h"
 
@@ -12,10 +13,7 @@ char *_strdup(char *str)
 	unsigned int i = 0;
 	char *dup;
 
-	while (*str != '\0')
-		++len;
-
-	dup = malloc(len + 1);
+	dup = malloc(strlen(str) + 1);
 
 	if (dup == 0)
 		return (NULL);
