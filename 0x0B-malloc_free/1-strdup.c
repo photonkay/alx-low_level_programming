@@ -19,11 +19,7 @@ char *_strdup(char *str)
 	if (str == NULL)
 		return (NULL);
 
-	while (i < sizeof(dup))
-	{
-		*(dup + i) = *(str + i);
-		i++;
-	}
+	strcpy(dup, str);
 	return (dup);
 	free(dup);
 }
