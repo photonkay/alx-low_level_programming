@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * str_concat - concatenates two strings
+ * alloc_grid - initialises grid
  * @width: initial array size
  * @height: second dimension array size
  * Return: array pointer
