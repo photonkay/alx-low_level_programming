@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <string.h>
-/*
+/**
  * countWords - counts the number of words in string
  * @str: sting passed
  * Return: int count
@@ -16,7 +16,7 @@ int countWords(const char *str)
 		{
 			isWord = 0;
 		}
-		else if (isWord == 0) 
+		else if (isWord == 0)
 		{
 			isWord = 1;
 			count++;
@@ -41,46 +41,40 @@ char **strtow(char *str)
 
 	if (str == NULL || *str == '\0')
 		return (NULL); /* Return NULL for empty or NULL input */
-
 	if (numWords == 0)
 		return (NULL); /* No words found */
-
 	wordArray = (char **)malloc((numWords + 1) * sizeof(char *));
 	if (wordArray == NULL)
 		return (NULL); /* Memory allocation failed */
-
 	while (*str)
 	{
-		if (*str == ' ' || *str == '\t' || *str == '\n') {
+		if (*str == ' ' || *str == '\t' || *str == '\n')
+		{
 			if (wordLength > 0)
 			{
 				wordArray[wordIndex] = (char *)malloc((wordLength + 1) * sizeof(char));
 				if (wordArray[wordIndex] == NULL)
 					return (NULL); /* Memory allocation failed */
-
 				strncpy(wordArray[wordIndex], str - wordLength, wordLength);
 				wordArray[wordIndex][wordLength] = '\0';
 				wordLength = 0;
 				wordIndex++;
 			}
-        }
+		}
 		else
 			wordLength++;
-        str++;
-    }
-
-    /* Handle the last word */
+		str++;
+	}
 	if (wordLength > 0)
 	{
 		wordArray[wordIndex] = (char *)malloc((wordLength + 1) * sizeof(char));
 		if (wordArray[wordIndex] == NULL)
-            return (NULL); /* Memory allocation failed */
+			return (NULL); /* Memory allocation failed */
 
 		strncpy(wordArray[wordIndex], str - wordLength, wordLength);
 		wordArray[wordIndex][wordLength] = '\0';
 		wordIndex++;
 	}
-
 	wordArray[wordIndex] = NULL; /* Null-terminate the array */
 	return (wordArray);
 }
