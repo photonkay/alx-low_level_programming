@@ -40,14 +40,14 @@ char **strtow(char *str)
 	char **wordArray;
 
 	if (str == NULL || *str == '\0')
-		return (NULL); // Return NULL for empty or NULL input
+		return (NULL); /* Return NULL for empty or NULL input */
 
 	if (numWords == 0)
-		return (NULL); // No words found
+		return (NULL); /* No words found */
 
-    wordArray = (char **)malloc((numWords + 1) * sizeof(char *));
+	wordArray = (char **)malloc((numWords + 1) * sizeof(char *));
 	if (wordArray == NULL)
-		return (NULL); // Memory allocation failed
+		return (NULL); /* Memory allocation failed */
 
 	while (*str)
 	{
@@ -56,7 +56,7 @@ char **strtow(char *str)
 			{
 				wordArray[wordIndex] = (char *)malloc((wordLength + 1) * sizeof(char));
 				if (wordArray[wordIndex] == NULL)
-					return (NULL); // Memory allocation failed
+					return (NULL); /* Memory allocation failed */
 
 				strncpy(wordArray[wordIndex], str - wordLength, wordLength);
 				wordArray[wordIndex][wordLength] = '\0';
@@ -69,18 +69,18 @@ char **strtow(char *str)
         str++;
     }
 
-    // Handle the last word
+    /* Handle the last word */
 	if (wordLength > 0)
 	{
 		wordArray[wordIndex] = (char *)malloc((wordLength + 1) * sizeof(char));
 		if (wordArray[wordIndex] == NULL)
-            return (NULL); // Memory allocation failed
+            return (NULL); /* Memory allocation failed */
 
 		strncpy(wordArray[wordIndex], str - wordLength, wordLength);
 		wordArray[wordIndex][wordLength] = '\0';
 		wordIndex++;
 	}
 
-	wordArray[wordIndex] = NULL; // Null-terminate the array
+	wordArray[wordIndex] = NULL; /* Null-terminate the array */
 	return (wordArray);
 }
