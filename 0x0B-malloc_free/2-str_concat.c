@@ -13,9 +13,9 @@ char *str_concat(char *s1, char *s2)
 	unsigned int i, j;
 
 	if (s1 == NULL)
-		return (NULL);
+		s1 = "";
 	if (s2 == NULL)
-		return (NULL);
+		s2 = "";
 
 	dest = malloc(strlen(s1) + strlen(s1) + 2);
 	if (dest == NULL)
