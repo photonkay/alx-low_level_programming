@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * free_gird - frees the grid allocation in 3-alloc_grid.c
+ * free_grid - frees the grid allocation in 3-alloc_grid.c
  * @grid: array pointer pointer
  * @height: height of array
  * Return: void
