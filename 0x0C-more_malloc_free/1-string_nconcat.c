@@ -6,6 +6,7 @@
  * string_nconcat - concatenates two strings, s1 and the first n bytes of s2
  * @s1: first string
  * @s2: second string
+ * @n: number of bytes
  * Return: char pointer
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
@@ -21,10 +22,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	len1 = strlen(s1);
 	len2 = strlen(s2);
 
-	if(n >= strlen(s2))
-	{
+	if (n >= strlen(s2))
 		n= len2;
-	}
 
 	dest = malloc(len1 + n + 1);
 
@@ -34,5 +33,5 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	strcpy(dest, s1);
 	strncat(dest, s2, n);
 	return (dest);
-	free (dest);
+	free(dest);
 }
