@@ -13,7 +13,10 @@ void *malloc_checked(unsigned int b)
 	bp = malloc(b);
 
 	if (bp == NULL)
+	{
 		exit(98);
+	}
 
-	return (bp);
+        :x
+        :x
 }
