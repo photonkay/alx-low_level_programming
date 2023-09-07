@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * string_nconcat - concatenates two strings, s1 and the first n bytes of s2
+ * string_nconcat - concatenates two strings
  * @s1: first string
  * @s2: second string
  * @n: number of bytes
@@ -22,8 +22,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	len1 = strlen(s1);
 	len2 = strlen(s2);
 
-	if (n >= strlen(s2))
-		n= len2;
+	if (n >= len2)
+		n = len2;
 
 	dest = malloc(len1 + n + 1);
 
