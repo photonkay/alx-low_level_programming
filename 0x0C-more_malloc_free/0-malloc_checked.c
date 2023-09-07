@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * malloc_checked - allocates memory and checks if allocation fails
+ * malloc_checked - allocates memory and checks allocation fail
  * @b: an unsigned integer
  * Return: void
  */
