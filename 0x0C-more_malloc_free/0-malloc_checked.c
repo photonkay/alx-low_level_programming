@@ -1,3 +1,4 @@
+#include "main.h"
 #include <string.h>
 #include <stdlib.h>
 
@@ -12,5 +13,5 @@ void *malloc_checked(unsigned int b)
 	bp = malloc(sizeof(unsigned int));
 
 	if (bp == NULL)
-		printf("98");
+		exit(98);
 }
