@@ -39,21 +39,21 @@ int multiply(int num1, int num2)
 int main(int argc, char *argv[])
 {
 	char *num1_str, *num2_str;
-	int num1. num2, result;
+	int num1, num2, result;
 
 	if (argc != 3)
 	{
 		printf("Error\n");
-		return 98; /*incorrect number of arguments*/
+		return (98); /*incorrect number of arguments*/
 	}
 
-	*num1_str = argv[1];
-	*num2_str = argv[2];
+	num1_str = argv[1];
+	num2_str = argv[2];
 
 	if (!isNumeric(num1_str) || !isNumeric(num2_str))
 	{
 		printf("Error\n");
-		return 98; /*Arguments are not numeric*/
+		return (98); /*Arguments are not numeric*/
 	}
 
  	num1 = atoi(num1_str);
@@ -62,11 +62,11 @@ int main(int argc, char *argv[])
 	if (num1 < 0 || num2 < 0)
 	{
 		printf("Error\n");
-		return 98; /*Numbers are not positive*/
+		return (98); /*Numbers are not positive*/
 	}
 
 	result = multiply(num1, num2);
 	printf("%d\n", result);
 
-	return 0;
+	return (0);
 }
