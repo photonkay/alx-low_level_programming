@@ -1,10 +1,9 @@
 #include "main.h"
 #include <stdlib.h>
-#include <string.h>
 
 /**
- * _calloc - allocates memory array
- * @nmemb - array
+ * _calloc - allocates array memory
+ * @nmemb: array
  * @size: number of bytes
  * Return: pointer
  */
