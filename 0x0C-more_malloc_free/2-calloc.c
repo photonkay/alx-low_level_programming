@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 #include <string.h>
+
 /**
  * _calloc - allocates memory array
  * @nmemb - array
@@ -15,6 +16,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 
 	ptr = malloc(nmemb * size);
+
 	if (ptr == NULL)
 		return (NULL);
 
