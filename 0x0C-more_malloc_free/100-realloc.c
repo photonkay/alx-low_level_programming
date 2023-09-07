@@ -1,7 +1,6 @@
 #include "main.h"
 #include <string.h>
 #include <stdlib.h>
-
 /**
  * array_range - creates an array of integers
  * @ptr: pointer to previous memory
@@ -11,7 +10,7 @@
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-	unsigned int i, copy_size;
+	unsigned int copy_size;
 	void *new_ptr;
 
 	if (new_size == old_size)
