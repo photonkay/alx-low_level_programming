@@ -6,7 +6,6 @@
  * isNumeric - checks if argument is a digit
  * @str - argument passed
  * Return - 1 if is digit
- * otherwise 0 is returned
  */
 int isNumeric(const char *str)
 {
@@ -14,7 +13,7 @@ int isNumeric(const char *str)
 	{
 		if (!isdigit(*str))
 			return (0);
-        str++;
+		str++;
 	}
 	return (1);
 }
@@ -23,7 +22,7 @@ int isNumeric(const char *str)
  * multiply - multiply two numbers
  * @num1: first number
  * @num2: second number
- * Return; product
+ * Return: product
  */
 int multiply(int num1, int num2)
 {
@@ -56,7 +55,7 @@ int main(int argc, char *argv[])
 		return (98); /*Arguments are not numeric*/
 	}
 
- 	num1 = atoi(num1_str);
+	num1 = atoi(num1_str);
 	num2 = atoi(num2_str);
 
 	if (num1 < 0 || num2 < 0)
