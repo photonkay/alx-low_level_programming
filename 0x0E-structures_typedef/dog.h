@@ -1,5 +1,5 @@
-#ifndef DETAILS_H
-#define DETAILS_H
+#ifndef DOG_H
+#define DOG_H
 
 /**
  * struct dog - particulars of dog
@@ -13,6 +13,6 @@ struct dog
         char* name;
         float age;
         char* owner;
-}
+};
 
-#endif /* DETAILS_H */
+#endif /* DOG_H */
