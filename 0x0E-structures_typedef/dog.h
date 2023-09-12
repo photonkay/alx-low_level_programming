@@ -6,6 +6,7 @@
  * @name: name of dog
  * @age: age of dog
  * @owner: who owns the dog
+ *
  * Description: creating a structure to hold certain parameters
  */
 struct dog
