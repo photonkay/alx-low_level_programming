@@ -7,7 +7,6 @@
  * @size: size of array
  * @cmp: comparison function
  * Return: return index of element on success
- * 	-1 if no element or size <= 0
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
@@ -21,6 +20,5 @@ int int_index(int *array, int size, int (*cmp)(int))
 				return (i);
 		}
 	}
-
 	return (-1);
 }
