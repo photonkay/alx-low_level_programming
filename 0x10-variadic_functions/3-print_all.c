@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdarg.h>
+
 /**
  * print_all - prints everything
  * @format: list of types of arguments passed
- * Return: void
  */
 void print_all(const char * const format, ...)
 {
@@ -43,6 +43,7 @@ void print_all(const char * const format, ...)
 			i++;
 		}
 	}
+
 	printf("\n");
 	va_end(list);
 }
