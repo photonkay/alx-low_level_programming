@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "3-calc.h"
+
 /**
  * main - entry point
  * @argc: argument count
@@ -23,7 +24,7 @@ int main(int argc, char *argv[])
 
 	func = get_op_func(argv[2]);
 
-	if(!func)
+	if (!func)
 	{
 		printf("Error\n");
 		exit(99);

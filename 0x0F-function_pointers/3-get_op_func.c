@@ -2,9 +2,11 @@
 #include <stdlib.h>
 #include <string.h>
 #include "3-calc.h"
+
 /**
  * get_op_func - decides which operation to perform
  * @s: operation to perform
+ *
  * Return: pointer to operation function
  */
 int (*get_op_func(char *s))(int, int)
@@ -20,6 +22,7 @@ int (*get_op_func(char *s))(int, int)
 	int i;
 
 	i = 0;
+
 	while (ops[i].op)
 	{
 		if (strcmp(ops[i].op, s) == 0)

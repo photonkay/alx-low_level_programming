@@ -10,14 +10,15 @@ int op_mod(int a, int b);
 int (*get_op_func(char *s))(int, int);
 
 /**
- * struct op - struct of operations
- * op: operator
- * @f: function associated
+ * struct op - struct of op
+ *
+ * op: The operator
+ * @f: The function associated
  */
 typedef struct op
 {
 	char *op;
 	int (*f)(int a, int b);
-}op_t;
+} op_t;
 
 #endif /* CALC_H */
