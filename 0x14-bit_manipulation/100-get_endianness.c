@@ -1,13 +1,17 @@
 #include "main.h"
 
 /**
- * get_endianness - turns one into another
- * Return: 1 for little endian
+ * get_endianness - checks endianness
+ *
+ * Return: integer
  */
 int get_endianness(void)
 {
-	unsigned long int x = 1;
-	unsigned char *ptr = (unsigned char *) & x;
+	unsigned long int x;
+	unsigned char *ptr; 
+
+	x = 1;
+	ptr = (unsigned char *) & x;
 
 	if (*ptr == 1)
 		return (1); /* Little endian */
