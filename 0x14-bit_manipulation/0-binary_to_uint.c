@@ -3,7 +3,7 @@
 /**
  * binary_to_uint - converts binary to unsigned int
  * @b: character array of 0s and 1s
- *Return: unsigned int
+ * Return: unsigned int
  */
 unsigned int binary_to_uint(const char *b)
 {
