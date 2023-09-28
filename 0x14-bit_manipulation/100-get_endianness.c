@@ -3,7 +3,6 @@
 /**
  * get_endianness - turns one into another
  * Return: 1 for little endian
- *	0 for big endian
  */
 int get_endianness(void)
 {
