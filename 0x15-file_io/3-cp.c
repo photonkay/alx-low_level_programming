@@ -30,7 +30,7 @@ void file_error(int file_from, int file_to, char *argv[])
 int main(int argc, char *argv[])
 {
 	int file_from, file_to, err_close;
-	ssize_t nchar, filewrite;
+	ssize_t nchar, fwrite;
 	char buffer[1024];
 
 	if (argc != 3)
@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
 	}
 
 	file_from = open(argv[1], O_RDONLY);
-	fiel_to = open(argv[2], O_CREAT | 0_WRONLY | O_TRUNC | 0_APPEND, 0664);
+	file_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
 	file_error(file_from, file_to, argv);
 
 	nchar = 1024;
