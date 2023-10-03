@@ -17,9 +17,7 @@ int append_text_to_file(const char *filename, char *text_content)
 
 	fd = open(filename, O_WRONLY | O_APPEND);
 
-	if (text_content == NULL)
-		;
-	else
+	if (text_content)
 	{
 		characters = strlen(text_content);
 		fwrite = write(fd, text_content, characters);
