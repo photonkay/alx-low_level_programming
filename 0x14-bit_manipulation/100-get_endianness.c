@@ -8,10 +8,10 @@
 int get_endianness(void)
 {
 	unsigned long int x;
-	unsigned char *ptr; 
+	unsigned char *ptr;
 
 	x = 1;
-	ptr = (unsigned char *) & x;
+	ptr = (unsigned char *) &x;
 
 	if (*ptr == 1)
 		return (1); /* Little endian */
